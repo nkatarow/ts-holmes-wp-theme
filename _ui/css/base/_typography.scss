@@ -3,6 +3,7 @@
    ========================================================================== */
 
 body {
+	color: $gray;
     font-family: "GT-Walsheim", "Arial", "Helvetica", sans-serif;
     font-size: 62.5%;
 }
@@ -20,18 +21,6 @@ h3, .h3   {
     line-height: 1.2;
 }
 
-h4, .h4   {
-
-}
-
-h5, .h5 {
-
-}
-
-h6, .h6    {
-
-}
-
 
 // Subheadings
 .subheading {
@@ -42,6 +31,19 @@ h6, .h6    {
 // Paragraphs
 p {
     margin-bottom: $space;
+	font-weight: 300;
+	font-size: 1.4em;
+
+	.large-orange {
+		color: $orange;
+		font-size: 1.5em;
+		font-weight: 500;
+	}
+
+	.large-gray {
+		font-size: 1.215em;
+		font-weight: 500;
+	}
 }
 
 

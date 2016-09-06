@@ -46,6 +46,59 @@
 
 	/* ========================================================================================================================
 
+	TinyMCE Custom Styles
+
+	======================================================================================================================== */
+
+	// Callback function to insert 'styleselect' into the $buttons array
+	function my_mce_buttons_2( $buttons ) {
+		array_unshift( $buttons, 'styleselect' );
+		return $buttons;
+	}
+
+	// Only allow desired block level elements
+	function editmce($arr){
+	    $arr['block_formats'] = 'Paragraph=p;Heading 2=h2;Heading 3=h3';
+	    return $arr;
+	}
+
+	// Callback function to filter the MCE settings
+	function my_mce_before_init_insert_formats( $init_array ) {
+		// Define the style_formats array
+		$style_formats = array(
+			// Each array child is a format with it's own settings
+			array(
+				'title' => 'Large Orange',
+				'inline' => 'span',
+				'classes' => 'large-orange',
+				'wrapper' => true,
+			),
+			array(
+				'title' => 'Large Gray',
+				'inline' => 'span',
+				'classes' => 'large-gray',
+				'wrapper' => true,
+			),
+			array(
+				'title' => 'Arrow Link',
+				'inline' => 'span',
+				'classes' => 'arrow-link',
+				'wrapper' => true,
+			)
+		);
+		// Insert the array, JSON ENCODED, into 'style_formats'
+		$init_array['style_formats'] = json_encode( $style_formats );
+		return $init_array;
+	}
+
+	// Register our callback to the appropriate filter
+	add_filter('mce_buttons_2', 'my_mce_buttons_2');
+	add_filter('tiny_mce_before_init', 'editmce');
+	add_filter('tiny_mce_before_init', 'my_mce_before_init_insert_formats');
+
+
+	/* ========================================================================================================================
+
 	Custom Post Types - include custom post types and taxonimies here e.g.
 
 	e.g. require_once( 'custom-post-types/your-custom-post-type.php' );

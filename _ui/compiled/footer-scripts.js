@@ -38,9 +38,9 @@ window.HO = {
                 i,
                 ii;
 
-            if (event.width >= 700 && self.nav.isMobile) {
+            if (event.width >= 800 && self.nav.isMobile) {
                 self.nav.mobileOff();
-            } else if (event.width < 700 && !self.nav.isMobile) {
+            } else if (event.width < 800 && !self.nav.isMobile) {
                 self.nav.mobileOn();
             }
         }
@@ -169,6 +169,7 @@ HO.nav = {
         self.menus[self.visibleMenu].$menu.removeClass('active');
         self.menus[self.visibleMenu].$trigger.removeClass('is-active');
         self.visibleMenu = null;
+		$('header').removeClass('active');
     },
     showNav: function (menu) {
         // fn showNav
@@ -181,5 +182,6 @@ HO.nav = {
         self.menus[menu].$menu.addClass('active');
         self.menus[menu].$trigger.addClass('is-active');
         self.visibleMenu = menu;
+		$('header').addClass('active');
     }
 };

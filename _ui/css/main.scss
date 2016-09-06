@@ -19,6 +19,7 @@
 // Base
 @import "base/lists";
 @import "base/links";
+@import "base/layout";
 @import "base/media";
 @import "base/grid";
 @import "base/fonts";
@@ -29,4 +30,6 @@
 
 // Components
 @import "components/hamburger";
-@import "components/navigation"
+@import "components/navigation";
+@import "components/hero";
+@import "components/about"

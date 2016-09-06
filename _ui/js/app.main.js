@@ -38,9 +38,9 @@ window.HO = {
                 i,
                 ii;
 
-            if (event.width >= 700 && self.nav.isMobile) {
+            if (event.width >= 800 && self.nav.isMobile) {
                 self.nav.mobileOff();
-            } else if (event.width < 700 && !self.nav.isMobile) {
+            } else if (event.width < 800 && !self.nav.isMobile) {
                 self.nav.mobileOn();
             }
         }

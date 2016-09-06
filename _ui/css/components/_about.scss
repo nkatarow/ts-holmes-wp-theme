@@ -1,0 +1,34 @@
+/* ==========================================================================
+   COMPONENTS/_ABOUT.SCSS
+   ========================================================================== */
+
+#about-us {
+	background-image: url('/wp-content/themes/holmes/_ui/img/global/bg-about.svg');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	padding-bottom: $mobile-buffer;
+	padding-top: $mobile-buffer;
+
+	p:last-child { margin-bottom: 0; }
+}
+
+@media screen and (min-width: $bp-large) {
+	#about-us {
+		p { font-size: 1.7em; }
+	}
+}
+
+@media screen and (min-width: $bp-large-2) {
+	#about-us {
+		padding-bottom: $desktop-buffer;
+		padding-top: $desktop-buffer;
+
+		.container {
+			margin: 0 auto;
+			padding: 0;
+			max-width: 815px;
+			width: 100%;
+		}
+	}
+}

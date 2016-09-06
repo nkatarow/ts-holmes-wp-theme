@@ -89,6 +89,7 @@ HO.nav = {
         self.menus[self.visibleMenu].$menu.removeClass('active');
         self.menus[self.visibleMenu].$trigger.removeClass('is-active');
         self.visibleMenu = null;
+		$('header').removeClass('active');
     },
     showNav: function (menu) {
         // fn showNav
@@ -101,5 +102,6 @@ HO.nav = {
         self.menus[menu].$menu.addClass('active');
         self.menus[menu].$trigger.addClass('is-active');
         self.visibleMenu = menu;
+		$('header').addClass('active');
     }
 };

@@ -3,7 +3,11 @@
    ========================================================================== */
 
 header {
-	@include container();
+	@include clearfix();
+	padding: 0 5%;
+	height: 70px;
+
+	// &.active { height: 100%; }
 
 	.logo {
 		display: inline-block;
@@ -23,6 +27,7 @@ header {
 
 	.hamburger {
 		float: right;
+		margin-top: 1.25em;
 		padding-right: 0;
 
 		&:focus { outline: 0; }

@@ -1,0 +1,54 @@
+/* ==========================================================================
+   COMPONENTS/_HERO.SCSS
+   ========================================================================== */
+
+.hero {
+	background: url('/wp-content/themes/holmes/_ui/img/global/bg-hero.jpg') no-repeat center center;
+	background-size: cover;
+	color: $white;
+	padding: 5%;
+
+	.orange-block {
+		background-color: $orange-trans;
+		padding: $space-double;
+
+		h2 {
+			font-size: 3.4em;
+			font-weight: 500;
+			margin-bottom: $space;
+		}
+
+		p {
+			font-size: 1.6em;
+			font-weight: 400;
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media screen and (min-width: $bp-large) {
+	.hero {
+		.orange-block {
+			h2 {
+				font-size: 9.4em;
+				line-height: 1em;
+				margin-bottom: $space-half;
+				max-width: 70%;
+			}
+
+			p {
+				font-size: 2.4em;
+				max-width: 70%;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $bp-xl) {
+	.hero {
+		.orange-block {
+			h2 { max-width: 50%; }
+			p { max-width: 50%; }
+		}
+	}
+}
