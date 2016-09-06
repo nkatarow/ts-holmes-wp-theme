@@ -3,7 +3,7 @@
    ========================================================================== */
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "GT-Walsheim", "Arial", "Helvetica", sans-serif;
     font-size: 62.5%;
 }
 
@@ -50,7 +50,7 @@ blockquote {
     font-style:italic;
     border-left: 1px solid $gray;
     color: $gray;
-    padding-left: $pad;
+    padding-left: $space;
     margin-bottom: $space;
 }
 

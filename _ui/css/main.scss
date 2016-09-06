@@ -22,11 +22,11 @@
 @import "base/media";
 @import "base/grid";
 @import "base/fonts";
-@import "base/buttons";
 @import "base/utility";
 @import "base/typography";
 @import "base/wordpress-classes";
 
 
 // Components
-@import "components/style-guide"
+@import "components/hamburger";
+@import "components/navigation"

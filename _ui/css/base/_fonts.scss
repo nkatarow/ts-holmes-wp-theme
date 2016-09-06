@@ -2,4 +2,35 @@
    BASE/_FONTS.SCSS
    ========================================================================== */
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+// Regular(300) - Normal
+@font-face {
+    font-family: "GT-Walsheim";
+    src:url("/wp-content/themes/holmes/_ui/fonts/GT-Walsheim-Regular/GT-Walsheim-Regular.eot");
+    src:url("/wp-content/themes/holmes/_ui/fonts/GT-Walsheim-Regular/GT-Walsheim-Regular.eot?#iefix") format("embedded-opentype"),
+        url("/wp-content/themes/holmes/_ui/fonts/GT-Walsheim-Regular/GT-Walsheim-Regular.woff") format("woff"),
+        url("/wp-content/themes/holmes/_ui/fonts/GT-Walsheim-Regular/GT-Walsheim-Regular.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+// Medium(400) - Normal
+@font-face {
+    font-family: "GT-Walsheim";
+    src:url("/wp-content/themes/holmes/_ui/fonts/GT-Walsheim-Medium/GT-Walsheim-Medium.eot");
+    src:url("/wp-content/themes/holmes/_ui/fonts/GT-Walsheim-Medium/GT-Walsheim-Medium.eot?#iefix") format("embedded-opentype"),
+        url("/wp-content/themes/holmes/_ui/fonts/GT-Walsheim-Medium/GT-Walsheim-Medium.woff") format("woff"),
+        url("/wp-content/themes/holmes/_ui/fonts/GT-Walsheim-Medium/GT-Walsheim-Medium.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+// Bold(500) - Normal
+@font-face {
+    font-family: "GT-Walsheim";
+    src:url("/wp-content/themes/holmes/_ui/fonts/GT-Walsheim-Bold/GT-Walsheim-Bold.eot");
+    src:url("/wp-content/themes/holmes/_ui/fonts/GT-Walsheim-Bold/GT-Walsheim-Boldeot?#iefix") format("embedded-opentype"),
+        url("/wp-content/themes/holmes/_ui/fonts/GT-Walsheim-Bold/GT-Walsheim-Bold.woff") format("woff"),
+        url("/wp-content/themes/holmes/_ui/fonts/GT-Walsheim-Bold/GT-Walsheim-Bold.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}

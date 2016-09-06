@@ -1,0 +1,23 @@
+/* ==========================================================================
+   COMPONENTS/_NAVIGATION.SCSS
+   ========================================================================== */
+
+.nav {
+	background-color: $white-trans;
+	display: none;
+	left: 0;
+	padding: 20px;
+	position: absolute;
+	width: 100%;
+
+	&.active {
+		display: block;
+	}
+}
+
+
+@media only all and (min-width: 700px) {
+	.nav {
+		display: block;
+	}
+}
