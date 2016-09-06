@@ -1,0 +1,365 @@
+/* ==========================================================================
+   MAIN.SCSS
+   ========================================================================== */
+/**
+ *
+ * MAIN.CSS & MAIN.MIN.CSS are compiled using the imports from this file.
+ *
+ * To add new styles and components, import them in the appropriate sections below.
+ *
+ */
+/* ==========================================================================
+   HELPERS/_VARIABLES.SCSS
+   ========================================================================== */
+/* ==========================================================================
+   HELPERS/_MIXINS.SCSS
+   ========================================================================== */
+/* ==========================================================================
+   HELPERS/_RESET.SCSS
+   ========================================================================== */
+/* Border-Box http:/paulirish.com/2012/box-sizing-border-box-ftw/ */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, legend, label, table, header, footer, nav, section, figure {
+  margin: 0;
+  padding: 0;
+}
+
+header, footer, nav, section, article, hgroup, figure {
+  display: block;
+}
+
+/* ==========================================================================
+   BASE/_LISTS.SCSS
+   ========================================================================== */
+ol {
+  margin-left: 1.5em;
+}
+
+ul {
+  list-style: none;
+}
+
+dl {
+  overflow: hidden;
+  margin: 0 0 1em;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* ==========================================================================
+   BASE/_LINKS.SCSS
+   ========================================================================== */
+a {
+  color: #333;
+  text-decoration: none;
+  outline: 0;
+}
+a:hover, a:focus {
+  color: #808080;
+}
+
+/* ==========================================================================
+   BASE/_MEDIA.SCSS
+   ========================================================================== */
+img, video, object {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  margin-bottom: 1em;
+}
+
+figure {
+  margin-bottom: 1em;
+}
+figure img {
+  margin-bottom: 0.25em;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+/**
+ * Profound Grid
+ *
+ * Built in Sass (SCSS) this responsive/adaptive grid supports both fixed and fluid layouts,
+ * relative and fixed gutters, as well as your choice of semantic markup or generic '.grid-x' classes.
+ *
+ * The biggest difference to other grid systems is the use of negative margins for column
+ * placements, avoiding the subpixel rounding issues that usually break/uglify fluid layouts
+ * in some browsers.
+ *
+ * Nested columns are supported too, without having to reset the grid on each level.
+ *
+ * Credits/Inspiration:
+ * -------------------
+ * Semantic Grid: http://www.semantic.gs
+ * Susy: http://susy.oddbird.net
+ * Negative Grid: http://chrisplaneta.com/freebies/negativegrid-fluid-css-grid-by-chris-planeta/
+ *
+ * @author Profound Creative Studio
+ * @url http://www.profoundgrid.com
+ * @url http://www.weareprofound.com
+ */
+/**
+ * Clearfix
+ */
+/**
+ * Legacy Clearfix
+ */
+/**
+ * Establish the grid-containing element.
+ */
+/**
+ * Align an element to the grid.
+ */
+/**
+ * Apply to any column to make it the last one of the current row.
+ */
+/* ==========================================================================
+   BASE/_FONTS.SCSS
+   ========================================================================== */
+/* ==========================================================================
+   BASE/_BUTTONS.SCSS
+   ========================================================================== */
+button {
+  font-size: 1em;
+}
+
+.btn {
+  background-color: #000;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  padding: 1em;
+  text-align: center;
+}
+.btn:hover, .btn:focus {
+  background-color: pink;
+}
+.btn.alt {
+  background-color: #333;
+}
+.btn.alt:hover, .btn.alt:focus {
+  background-color: yellow;
+}
+.btn.disabled {
+  background-color: #808080;
+}
+.btn.disabled:hover, .btn.disabled:focus {
+  color: #fff;
+}
+
+/* ==========================================================================
+   BASE/_UTILITY.SCSS
+   ========================================================================== */
+.block {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.offscreen {
+  display: block;
+  left: -999999px;
+  position: absolute;
+  top: -999999px;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.hr {
+  border-top: 1px solid #808080;
+  display: block;
+  border-radius: 2px;
+}
+.hr hr {
+  display: none;
+}
+
+/* ==========================================================================
+   BASE/_TYPOGRAPHY.SCSS
+   ========================================================================== */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 62.5%;
+}
+
+h1, .h1 {
+  line-height: 1.2;
+}
+
+h2, .h2 {
+  line-height: 1.2;
+}
+
+h3, .h3 {
+  line-height: 1.2;
+}
+
+.subheading {
+  font-weight: normal;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 1px solid #808080;
+  color: #808080;
+  padding-left: 1em;
+  margin-bottom: 1em;
+}
+
+abbr {
+  border-bottom: 1px dotted #808080;
+  cursor: help;
+}
+
+/* ==========================================================================
+   BASE/_WORDPRESS-CLASSES.SCSS
+   ========================================================================== */
+/**
+ *
+ * Wordpress prefers to have these classes, if you need to use/customize them...
+ * do it here versus the style.css in the theme's root directory.
+ *
+ */
+/* ==========================================================================
+   COMPONENTS/_STYLE-GUIDE.SCSS
+   ========================================================================== */
+/**
+ *
+ * These are styles only used for demonstrations on the style guide page.
+ *
+ */
+.style-guide .palette,
+.style-guide .typography,
+.style-guide .grouping,
+.style-guide .text-semantics,
+.style-guide .tables,
+.style-guide .forms,
+.style-guide .buttons,
+.style-guide footer {
+  width: 98%;
+  margin: 0 1%;
+  margin: 0 auto 1%;
+  max-width: 72em;
+}
+.style-guide .container {
+  width: 98%;
+  margin: 0 1%;
+  overflow: hidden;
+  *zoom: 1;
+  margin: 0 auto;
+  max-width: 72em;
+}
+.style-guide .example {
+  outline: 1px dashed #ddd;
+  margin: 2em;
+  padding: 0.5em 0.5em;
+}
+.style-guide .palette table {
+  border-collapse: collapse;
+  color: #fff;
+  width: 100%;
+}
+.style-guide .palette table th {
+  text-align: left;
+  text-decoration: underline;
+}
+.style-guide .palette table td {
+  width: 33%;
+}
+.style-guide .grid-example {
+  width: 98%;
+  margin: 0 1%;
+  overflow: hidden;
+  *zoom: 1;
+  margin: 0 auto;
+  max-width: 72em;
+}
+.style-guide .grid-example > div {
+  background-color: pink;
+  height: 50px;
+}
+.style-guide .grid-example .left-nav {
+  margin-bottom: 1%;
+}
+@media screen and (min-width: 700px) {
+  .style-guide .grid-example .left-nav {
+    float: left;
+    margin-right: -100%;
+    width: 24.25%;
+  }
+}
+.style-guide .grid-example .main-content {
+  margin-bottom: 1%;
+}
+@media screen and (min-width: 700px) {
+  .style-guide .grid-example .main-content {
+    float: left;
+    margin-right: -100%;
+    width: 74.75%;
+    margin-left: 25.25%;
+  }
+}
+.style-guide .grid-example .pros {
+  float: left;
+  margin-right: -100%;
+  width: 49.5%;
+  margin-bottom: 1%;
+}
+@media screen and (min-width: 700px) {
+  .style-guide .grid-example .pros {
+    float: left;
+    margin-right: -100%;
+    width: 41.08%;
+  }
+}
+.style-guide .grid-example .cons {
+  float: left;
+  margin-right: -100%;
+  width: 49.5%;
+  margin-left: 50.5%;
+  margin-bottom: 1%;
+}
+@media screen and (min-width: 700px) {
+  .style-guide .grid-example .cons {
+    float: left;
+    margin-right: -100%;
+    width: 57.92%;
+    margin-left: 42.08%;
+  }
+}
