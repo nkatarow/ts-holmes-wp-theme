@@ -10,8 +10,8 @@ Template Name: Home
 <section class="hero">
 	<div class="orange-block">
 		<h1 class="offscreen">Holmes</h1>
-		<h2>Engineering Excellence</h2>
-		<p>Client objectives and user needs are at the core of our decision-making. By being objective oriented—not rule bound—engineering becomes more meaningful, with design as an integral, collaborative, vital process of getting things right.</p>
+		<h2><?php the_field('hero_headline'); ?></h2>
+		<p><?php the_field('hero_copy'); ?></p>
 	</div>
 </section>
 

@@ -31,6 +31,20 @@ window.HO = {
         });
 
         $(window).triggerHandler('resize');
+
+        $('.smooth').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
     },
     events: {
         windowResize: function (event) {
@@ -38,9 +52,9 @@ window.HO = {
                 i,
                 ii;
 
-            if (event.width >= 800 && self.nav.isMobile) {
+            if (event.width >= 1056 && self.nav.isMobile) {
                 self.nav.mobileOff();
-            } else if (event.width < 800 && !self.nav.isMobile) {
+            } else if (event.width < 1056 && !self.nav.isMobile) {
                 self.nav.mobileOn();
             }
         }

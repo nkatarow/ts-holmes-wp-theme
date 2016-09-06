@@ -94,6 +94,50 @@
 			</a>
 
 			<nav id="primary" class="nav">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary-navigation' ) ); ?>
+				<ul>
+					<li>
+						<a href="#about-us" class="smooth">
+							About
+							<span class="inline">Us</span>
+						</a>
+					</li>
+					<li>
+						<a href="#holmes-consulting" class="smooth">
+							Holmes
+							<span class="inline">Consulting</span>
+						</a>
+					</li>
+					<li>
+						<a href="#holmes-structures" class="smooth">
+							Holmes
+							<span class="inline">Structures</span>
+						</a>
+					</li>
+					<li>
+						<a href="#holmes-fire" class="smooth">
+							Holmes
+							<span class="inline">Fire</span>
+						</a>
+					</li>
+					<li>
+						<a href="#holmes-solutions" class="smooth">
+							Holmes
+							<span class="inline">Solutions</span>
+						</a>
+					</li>
+					<li>
+						<a href="#holmes-farsights" class="smooth">
+							Holmes
+							<span class="inline">Farsights</span>
+						</a>
+					</li>
+					<li>
+						<a href="#contact-us" class="smooth">
+							Contact
+							<span class="inline">Us</span>
+						</a>
+					</li>
+				</ul>
+				<!-- <?php wp_nav_menu( array( 'theme_location' => 'primary-navigation' ) ); ?> -->
 			</nav>
          </header>
