@@ -2,16 +2,56 @@
    COMPONENTS/_NAVIGATION.SCSS
    ========================================================================== */
 
+header {
+	@include container();
+
+	.logo {
+		display: inline-block;
+		height: 48px;
+		width: 77px;
+
+		.st0 {
+			fill: $orange;
+			transition: fill 250ms linear;
+		}
+
+		&:hover,
+		&:focus {
+			.st0 { fill: $gray; }
+		}
+	}
+
+	.hamburger {
+		float: right;
+		padding-right: 0;
+
+		&:focus { outline: 0; }
+	}
+}
+
 .nav {
 	background-color: $white-trans;
-	display: none;
+	font-size: 1.4em;
+	font-weight: 500;
+	height: 0;
 	left: 0;
-	padding: 20px;
+	overflow: hidden;
+	padding: 0 5% 0;
 	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	transition: height 250ms linear, padding-top 250ms linear;
 	width: 100%;
 
 	&.active {
 		display: block;
+		height: 100vh;
+		padding-top: $mobile-buffer;
+	}
+
+	a {
+		display: block;
+		padding: $space 0;
 	}
 }
 
