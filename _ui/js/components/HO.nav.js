@@ -56,6 +56,12 @@ HO.nav = {
         for (key in self.menus) {
             bindTrigger(self.menus[key].$trigger, key);
         }
+
+		$('#primary a').click(function(){
+			if (self.isMobile) {
+                self.hideNav('primary');
+			}
+		});
     },
     mobileOn: function () {
         // fn mobileOn

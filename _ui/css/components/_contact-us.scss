@@ -1,0 +1,50 @@
+/* ==========================================================================
+   COMPONENTS/_CONTACT.SCSS
+   ========================================================================== */
+
+#contact-us {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	color: $white;
+	padding-top: $mobile-buffer;
+	padding-bottom: $mobile-buffer;
+
+	h2 {
+		font-size: 2.5em;
+		margin-bottom: $space;
+	}
+
+	.arrow-link a {
+		background-image: url('/wp-content/themes/holmes/_ui/img/global/arrow-right-white.svg');
+		color: $white;
+		transition: color 250ms linear, background-position 250ms linear;
+
+		&:hover,
+		&:focus {
+			color: $orange;
+		}
+	}
+}
+
+@media screen and (min-width: $bp-large) {
+	#contact-us {
+		@include clearfix();
+		margin-top: $desktop-buffer;
+		padding-top: $desktop-buffer;
+		padding-bottom: $desktop-buffer;
+		p { font-size: 2.2em; }
+
+		.container {
+			margin: 0 auto;
+			max-width: $max-width;
+		}
+
+		.third {
+			@include column(4);
+
+			&:nth-child(2) { @include push(4); }
+			&:nth-child(3) { @include push(8); }
+		}
+	}
+}

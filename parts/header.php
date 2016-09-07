@@ -43,7 +43,7 @@
 		<meta name="twitter:image:src" content="http://holmesgrouplimited.com/_ui/img/global/social-share.jpg">
 		<meta name="twitter:domain" content="http://holmesgrouplimited.com/">
 
-
+		<script> document.createElement( "picture" ); </script>
         <?php wp_head(); ?>
         <?php
             // Figure out what our server name is

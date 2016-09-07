@@ -22,19 +22,20 @@ Template Name: Home
 	</div>
 </section>
 
-<!-- This one repeats -->
+<!-- Repeat -->
 <?php if( have_rows('vertical') ):
-
  	// loop through the rows of data
-    while ( have_rows('vertical') ) : the_row(); ?>
-		<section id="holmes-structures" class="vertical">
+    while ( have_rows('vertical') ) : the_row();
+		$blob = get_sub_field('vertical_name');
+		$sectionId = str_replace(' ', '-', strtolower($blob));
+	?>
+		<section id="<?php echo $sectionId ?>" class="vertical">
 			<picture class="feature-img">
-				<!--[if IE 9]><video style="display: none;"><![endif]-->
-					<source srcset="<?php the_sub_field('featured_image_desktop') ?>" media="(min-width: 800px)" />
-					<img srcset="<?php the_sub_field('featured_image_mobile') ?>" alt="">
-				<!--[if IE 9]></video><![endif]-->
-				<!--[if lte IE 9]><img src="<?php the_sub_field('featured_image_desktop') ?>" alt=""><![endif]-->
+				<source srcset="<?php the_sub_field('featured_image_desktop') ?>" media="(min-width: 800px)">
+				<source srcset="<?php the_sub_field('featured_image_mobile') ?>" media="(max-width: 799px)">
+				<img srcset="<?php the_sub_field('featured_image_desktop') ?>" alt="">
 			</picture>
+
 			<div class="copy">
 				<div class="block">
 					<h2>
@@ -46,31 +47,21 @@ Template Name: Home
 		</section>
 	<?php endwhile;
 endif; ?>
-<!--  -->
+<!-- END: Repeat -->
 
-<section id="contact-us">
-	<div class="third">
-		<h2>Contact Us</h2>
-	</div>
+<section id="contact-us" style="background-image: url(<?php the_field('contact_background_image') ?>)">
+	<div class="container">
+		<div class="third">
+			<h2>Contact Us</h2>
+		</div>
 
-	<div class="third">
-		<a href="#" class="arrow-link" target="_blank">Holmes Group Ltd.</a>
-		<p>
-			Level 2, Tower Centre
-			50 Customhouse Quay
-			Po Box 942
-			Wellington 6140
-			New Zealand
-			T: +64 3 366 3366
-		</p>
-	</div>
+		<div class="third">
+			<?php the_field('contact_center_column') ?>
+		</div>
 
-	<div class="third">
-		<a href="#" class="arrow-link" target="_blank">Holmes Structures</a>
-		<a href="#" class="arrow-link" target="_blank">Holmes Consulting</a>
-		<a href="#" class="arrow-link" target="_blank">Holmes Fire</a>
-		<a href="#" class="arrow-link" target="_blank">Holmes Solutions</a>
-		<a href="#" class="arrow-link" target="_blank">Holmes Farsight</a>
+		<div class="third">
+			<?php the_field('contact_third_column') ?>
+		</div>
 	</div>
 </section>
 
