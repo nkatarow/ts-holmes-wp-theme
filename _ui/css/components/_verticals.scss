@@ -1,0 +1,60 @@
+/* ==========================================================================
+   COMPONENTS/_VERTICALS.SCSS
+   ========================================================================== */
+
+.vertical {
+	.copy {
+		@include container();
+		padding: $mobile-buffer 0;
+
+		h2 img {
+			height: 25px;
+			margin-bottom: $space;
+			width: auto;
+		}
+	}
+}
+
+@media screen and (min-width: $bp-large) {
+	.vertical {
+		@include clearfix();
+		padding-top: $desktop-buffer;
+		margin: 0 auto;
+		max-width: 1400px;
+
+		.feature-img { max-width: 660px; }
+
+		.copy {
+			padding-right: 5%;
+			max-width: 440px;
+
+			p {
+				font-size: 1.7em;
+
+				.large-gray { font-size: 1.525em; }
+			}
+		}
+
+		&:nth-child(even) {
+			.feature-img, .copy { @include column(6); }
+
+			.copy {
+				@include push(6);
+			}
+		}
+
+		&:nth-child(odd) {
+			.feature-img {
+				@include column(6);
+				@include push(6);
+			}
+
+			.copy {
+				max-width: 980px;
+				margin: 0 auto;
+
+				.block { @include column(6); }
+			}
+		}
+	}
+}

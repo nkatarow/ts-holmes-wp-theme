@@ -23,21 +23,29 @@ Template Name: Home
 </section>
 
 <!-- This one repeats -->
-<section id="holmes-consulting" class="img-alt">
-	<img src="" alt="" />
-	<h2>Holmes</h2>
-	<p><span class="large-gray"> Our experience in engineering for challenging seismic zones is peerless. We combine rigorous thinking, original technologies and Kiwi ingenuity—finding new and better ways to design robust, resilient structures.</span></p>
-	<p>Ever positive, and absolutely committed to leading new standards of analysis and design, we are the creative alternative to everyday engineering. With a substantial portfolio of signature projects, Holmes Consulting is trusted to deliver outstanding structural and civil designs all over the world.</p>
-	<a href="#" class="arrow-link">Learn more about Holmes Consulting</a>
-</section>
-<!--  -->
+<?php if( have_rows('vertical') ):
 
-<section id="holmes-structures" class="img-alt">
-	<img src="" alt="" />
-	<h2>Holmes Structures</h2>
-	<p>Our experience in engineering for challenging seismic zones is peerless. We combine rigorous thinking, original technologies and Kiwi ingenuity—finding new and better ways to design robust, resilient structures. Ever positive, and absolutely committed to leading new standards of analysis and design, we are the creative alternative to everyday engineering. With a substantial portfolio of signature projects, Holmes Consulting is trusted to deliver outstanding structural and civil designs all over the world.</p>
-	<a href="#" class="arrow-link">Learn more about Holmes Consulting</a>
-</section>
+ 	// loop through the rows of data
+    while ( have_rows('vertical') ) : the_row(); ?>
+		<section id="holmes-structures" class="vertical">
+			<picture class="feature-img">
+				<!--[if IE 9]><video style="display: none;"><![endif]-->
+					<source srcset="<?php the_sub_field('featured_image_desktop') ?>" media="(min-width: 800px)" />
+					<img srcset="<?php the_sub_field('featured_image_mobile') ?>" alt="">
+				<!--[if IE 9]></video><![endif]-->
+				<!--[if lte IE 9]><img src="<?php the_sub_field('featured_image_desktop') ?>" alt=""><![endif]-->
+			</picture>
+			<div class="copy">
+				<div class="block">
+					<h2>
+						<img src="<?php the_sub_field('vertical_name_image') ?>" alt="<?php the_sub_field('vertical_name') ?>" />
+					</h2>
+					<?php the_sub_field('copy') ?>
+				</div>
+			</div>
+		</section>
+	<?php endwhile;
+endif; ?>
 <!--  -->
 
 <section id="contact-us">

@@ -1,0 +1,56 @@
+/* ==========================================================================
+   COMPONENTS/_FOOTER.SCSS
+   ========================================================================== */
+
+footer {
+	background-color: $orange;
+	color: $white;
+	padding-bottom: $space-double;
+	padding-top: $space-double;
+	text-align: center;
+
+	a {
+		color: $white;
+
+		&:hover,
+		&:focus {
+			color: $gray;
+		}
+	}
+
+	.logo {
+		display: block;
+		height: 48px;
+		margin: 0 auto;
+		width: 77px;
+
+		.st1 {
+			fill: $white;
+			transition: fill 250ms linear;
+		}
+
+		&:hover,
+		&:focus {
+			.st1 { fill: $gray; }
+		}
+	}
+
+	ul {
+		@include clearfix();
+		display: inline-block;
+		margin: $space-double 0 $space-and-half;
+		font-size: 1.1em;
+
+		li {
+			float: left;
+			margin-right: $space;
+
+			&:last-child { margin-right: 0; }
+		}
+	}
+
+	small {
+		display: block;
+		font-size: 0.9em;
+	}
+}

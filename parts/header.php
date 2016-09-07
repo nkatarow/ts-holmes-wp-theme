@@ -21,8 +21,8 @@
 		<link rel="icon" type="image/png" href="/_ui/img/favicons/favicon-32x32.png" sizes="32x32" />
 		<link rel="icon" type="image/png" href="/_ui/img/favicons/favicon-16x16.png" sizes="16x16" />
 		<link rel="icon" type="image/png" href="/_ui/img/favicons/favicon-128.png" sizes="128x128" />
-		<meta name="application-name" content="Bridge Partners Consulting"/>
-		<meta name="msapplication-TileColor" content="#FFFFFF" />
+		<meta name="application-name" content="Holmes Group Limited"/>
+		<meta name="msapplication-TileColor" content="#f89920" />
 		<meta name="msapplication-TileImage" content="/_ui/img/favicons/mstile-144x144.png" />
 		<meta name="msapplication-square70x70logo" content="/_ui/img/favicons/mstile-70x70.png" />
 		<meta name="msapplication-square150x150logo" content="/_ui/img/favicons/mstile-150x150.png" />
@@ -34,13 +34,13 @@
 		<meta property="og:url" content="http://holmesgrouplimited.com/"/>
 		<meta property="og:site_name" content="Holmes Group Limited"/>
 		<meta property="og:type" content="website"/>
-		<meta property="og:image" content="http://holmesgrouplimited.com/_ui/img/global/bridge-partners-share.png"/>
+		<meta property="og:image" content="http://holmesgrouplimited.com/_ui/img/global/social-share.jpg"/>
 
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@holmesgroup">
 		<meta name="twitter:title" content="Holmes Group Limited">
 		<meta name="twitter:description" content="">
-		<meta name="twitter:image:src" content="http://holmesgrouplimited.com/_ui/img/global/bridge-partners-share.png">
+		<meta name="twitter:image:src" content="http://holmesgrouplimited.com/_ui/img/global/social-share.jpg">
 		<meta name="twitter:domain" content="http://holmesgrouplimited.com/">
 
 
@@ -75,7 +75,7 @@
 	</head>
     <body <?php body_class(); ?>>
         <header id="header">
-            <a href="#header" class="logo">
+            <a href="#header" class="logo" class="smooth">
 				<span class="offscreen"><?php bloginfo( 'name' ); ?></span>
 				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 113 71" style="enable-background:new 0 0 113 71;" xml:space="preserve">
