@@ -28,10 +28,10 @@
 	add_theme_support('post-thumbnails');
 
 	// register_nav_menus(array('primary' => 'Primary Navigation'));
-	function register_my_menu() {
-	  register_nav_menu('primary-navigation',__( 'Primary Navigation' ));
-	}
-	add_action( 'init', 'register_my_menu' );
+	// function register_my_menu() {
+	//   register_nav_menu('primary-navigation',__( 'Primary Navigation' ));
+	// }
+	// add_action( 'init', 'register_my_menu' );
 
 	/* ========================================================================================================================
 

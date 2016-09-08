@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Remove if you're not building a responsive site. (But then why would you do such a thing?) -->
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-		<meta name="description" content=""/>
+		<meta name="description" content="<?php the_field('meta_description') ?>"/>
 
 		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/_ui/img/favicons/apple-touch-icon-57x57.png" />
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/_ui/img/favicons/apple-touch-icon-114x114.png" />
@@ -30,7 +30,7 @@
 		<meta name="msapplication-square310x310logo" content="/_ui/img/favicons/mstile-310x310.png" />
 
 		<meta property="og:title" content="Holmes Group Limited"/>
-		<meta property="og:description" content="" />
+		<meta property="og:description" content="<?php the_field('meta_description') ?>" />
 		<meta property="og:url" content="http://holmesgrouplimited.com/"/>
 		<meta property="og:site_name" content="Holmes Group Limited"/>
 		<meta property="og:type" content="website"/>
@@ -39,7 +39,7 @@
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@holmesgroup">
 		<meta name="twitter:title" content="Holmes Group Limited">
-		<meta name="twitter:description" content="">
+		<meta name="twitter:description" content="<?php the_field('meta_description') ?>">
 		<meta name="twitter:image:src" content="http://holmesgrouplimited.com/_ui/img/global/social-share.jpg">
 		<meta name="twitter:domain" content="http://holmesgrouplimited.com/">
 
@@ -138,6 +138,5 @@
 						</a>
 					</li>
 				</ul>
-				<!-- <?php wp_nav_menu( array( 'theme_location' => 'primary-navigation' ) ); ?> -->
 			</nav>
          </header>
