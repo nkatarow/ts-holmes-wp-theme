@@ -19,9 +19,11 @@ footer {
 	}
 
 	.logo {
+		background-color: $orange;
 		display: block;
 		height: 48px;
 		margin: 0 auto;
+		transition: background-color 250ms linear;
 		width: 77px;
 
 		.st1 {
@@ -31,6 +33,8 @@ footer {
 
 		&:hover,
 		&:focus {
+			background-color: $white;
+
 			.st1 { fill: $gray; }
 		}
 	}
@@ -52,6 +56,7 @@ footer {
 	small {
 		display: block;
 		font-size: 0.9em;
+		font-weight: 300;
 	}
 }
 

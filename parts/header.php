@@ -8,26 +8,26 @@
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		<meta name="description" content="<?php the_field('meta_description') ?>"/>
 
-		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/_ui/img/favicons/apple-touch-icon-57x57.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/_ui/img/favicons/apple-touch-icon-114x114.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/_ui/img/favicons/apple-touch-icon-72x72.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/_ui/img/favicons/apple-touch-icon-144x144.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/_ui/img/favicons/apple-touch-icon-60x60.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/_ui/img/favicons/apple-touch-icon-120x120.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/_ui/img/favicons/apple-touch-icon-76x76.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/_ui/img/favicons/apple-touch-icon-152x152.png" />
-		<link rel="icon" type="image/png" href="/_ui/img/favicons/favicon-196x196.png" sizes="196x196" />
-		<link rel="icon" type="image/png" href="/_ui/img/favicons/favicon-96x96.png" sizes="96x96" />
-		<link rel="icon" type="image/png" href="/_ui/img/favicons/favicon-32x32.png" sizes="32x32" />
-		<link rel="icon" type="image/png" href="/_ui/img/favicons/favicon-16x16.png" sizes="16x16" />
-		<link rel="icon" type="image/png" href="/_ui/img/favicons/favicon-128.png" sizes="128x128" />
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?php echo get_template_directory_uri(); ?>/_ui/img/favicons/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/_ui/img/favicons/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/_ui/img/favicons/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo get_template_directory_uri(); ?>/_ui/img/favicons/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="60x60" href="<?php echo get_template_directory_uri(); ?>/_ui/img/favicons/apple-touch-icon-60x60.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="<?php echo get_template_directory_uri(); ?>/_ui/img/favicons/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="<?php echo get_template_directory_uri(); ?>/_ui/img/favicons/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="<?php echo get_template_directory_uri(); ?>/_ui/img/favicons/apple-touch-icon-152x152.png" />
+		<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/_ui/img/favicons/favicon-196x196.png" sizes="196x196" />
+		<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/_ui/img/favicons/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/_ui/img/favicons/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/_ui/img/favicons/favicon-16x16.png" sizes="16x16" />
+		<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/_ui/img/favicons/favicon-128.png" sizes="128x128" />
 		<meta name="application-name" content="Holmes Group Limited"/>
 		<meta name="msapplication-TileColor" content="#f89920" />
-		<meta name="msapplication-TileImage" content="/_ui/img/favicons/mstile-144x144.png" />
-		<meta name="msapplication-square70x70logo" content="/_ui/img/favicons/mstile-70x70.png" />
-		<meta name="msapplication-square150x150logo" content="/_ui/img/favicons/mstile-150x150.png" />
-		<meta name="msapplication-wide310x150logo" content="/_ui/img/favicons/mstile-310x150.png" />
-		<meta name="msapplication-square310x310logo" content="/_ui/img/favicons/mstile-310x310.png" />
+		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/_ui/img/favicons/mstile-144x144.png" />
+		<meta name="msapplication-square70x70logo" content="<?php echo get_template_directory_uri(); ?>/_ui/img/favicons/mstile-70x70.png" />
+		<meta name="msapplication-square150x150logo" content="<?php echo get_template_directory_uri(); ?>/_ui/img/favicons/mstile-150x150.png" />
+		<meta name="msapplication-wide310x150logo" content="<?php echo get_template_directory_uri(); ?>/_ui/img/favicons/mstile-310x150.png" />
+		<meta name="msapplication-square310x310logo" content="<?php echo get_template_directory_uri(); ?>/_ui/img/favicons/mstile-310x310.png" />
 
 		<meta property="og:title" content="Holmes Group Limited"/>
 		<meta property="og:description" content="<?php the_field('meta_description') ?>" />
@@ -57,10 +57,10 @@
             <script src="<?php echo get_template_directory_uri(); ?>/_ui/compiled/header-scripts.js"></script>
         <?php } else { ?>
             <!-- Otherwise, provide the compiled and minified CSS file. -->
-            <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/main.min.css" type="text/css" media="all">
+            <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_ui/dist/main.min.css" type="text/css" media="all">
 
             <!-- And the header scripts compiled and uglified -->
-            <script src="<?php echo get_template_directory_uri(); ?>/dist/js/header-scripts.min.js"></script>
+            <script src="<?php echo get_template_directory_uri(); ?>/_ui/dist/header-scripts.min.js"></script>
         <?php } ?>
 
 		<style media="screen">
@@ -75,10 +75,10 @@
 	</head>
     <body <?php body_class(); ?>>
         <header id="header">
-            <a href="#header" class="logo" class="smooth">
+            <a href="/" class="logo reveal">
 				<span class="offscreen"><?php bloginfo( 'name' ); ?></span>
 				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-					 viewBox="0 0 113 71" style="enable-background:new 0 0 113 71;" xml:space="preserve">
+					 viewBox="0 0 113 71" xml:space="preserve">
 				<path class="st0" d="M34.9,52c-2.1,0-3.5,1.7-3.5,3.7c0,2,1.4,3.7,3.5,3.7c2.1,0,3.5-1.7,3.5-3.7C38.4,53.7,37,52,34.9,52z M0,0v71
 					h113V0H0z M25.3,63h-4.9v-8.4H13V63H8.1V41.9H13v8.5h7.3v-8.5h4.9V63z M34.9,63.4c-5,0-8.1-3.5-8.1-7.7s3.1-7.7,8.1-7.7
 					c5.1,0,8.1,3.5,8.1,7.7S40,63.4,34.9,63.4z M49.2,63h-4.6V41.9h4.6V63z M74.4,63H70v-7.8c0-2-0.7-3.1-2.2-3.1
@@ -96,43 +96,43 @@
 			<nav id="primary" class="nav">
 				<ul>
 					<li>
-						<a href="#about-us" class="smooth">
+						<a href="#about-us" class="smooth reveal">
 							About
 							<span class="inline">Us</span>
 						</a>
 					</li>
 					<li>
-						<a href="#holmes-consulting" class="smooth">
+						<a href="#holmes-consulting" class="smooth reveal">
 							Holmes
 							<span class="inline">Consulting</span>
 						</a>
 					</li>
 					<li>
-						<a href="#holmes-structures" class="smooth">
+						<a href="#holmes-structures" class="smooth reveal">
 							Holmes
 							<span class="inline">Structures</span>
 						</a>
 					</li>
 					<li>
-						<a href="#holmes-fire" class="smooth">
+						<a href="#holmes-fire" class="smooth reveal">
 							Holmes
 							<span class="inline">Fire</span>
 						</a>
 					</li>
 					<li>
-						<a href="#holmes-solutions" class="smooth">
+						<a href="#holmes-solutions" class="smooth reveal">
 							Holmes
 							<span class="inline">Solutions</span>
 						</a>
 					</li>
 					<li>
-						<a href="#holmes-farsights" class="smooth">
+						<a href="#holmes-farsight" class="smooth reveal">
 							Holmes
-							<span class="inline">Farsights</span>
+							<span class="inline">Farsight</span>
 						</a>
 					</li>
 					<li>
-						<a href="#contact-us" class="smooth">
+						<a href="#contact-us" class="smooth reveal">
 							Contact
 							<span class="inline">Us</span>
 						</a>

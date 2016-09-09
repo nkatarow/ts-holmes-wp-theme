@@ -6,6 +6,7 @@
 	background: url('/wp-content/themes/holmes/_ui/img/global/bg-hero.jpg') no-repeat center center;
 	background-size: cover;
 	color: $white;
+	margin-top: 70px;
 	padding: 5%;
 
 	.orange-block {
@@ -28,7 +29,11 @@
 
 @media screen and (min-width: $bp-large) {
 	.hero {
+		margin-top: 100px;
+
 		.orange-block {
+			padding: $space-triple;
+
 			h2 {
 				font-size: 9.4em;
 				line-height: 1em;

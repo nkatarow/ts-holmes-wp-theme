@@ -1,0 +1,17 @@
+/* ==========================================================================
+   IE.CSS
+   ========================================================================== */
+
+.arrow-link a {
+	background-position: 140% center;
+	background-size: 50% 50%;
+}
+
+.arrow-link:hover a,
+.arrow-link:focus a {
+	background-position: 140% center;
+	color: #f89920;
+}
+
+#contact-us .arrow-link a:hover,
+#contact-us .arrow-link a:focus { color: #f89920; }

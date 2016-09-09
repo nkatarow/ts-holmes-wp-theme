@@ -13,6 +13,8 @@
 	h2 {
 		font-size: 2.5em;
 		margin-bottom: $space;
+
+		&.section-head { font-size: 1.7em; }
 	}
 
 	.arrow-link a {
@@ -22,7 +24,7 @@
 
 		&:hover,
 		&:focus {
-			color: $orange;
+			color: $white;
 		}
 	}
 }
@@ -33,7 +35,14 @@
 		margin-top: $desktop-buffer;
 		padding-top: $desktop-buffer;
 		padding-bottom: $desktop-buffer;
-		p { font-size: 2.2em; }
+
+		h2, p { font-size: 1.8em; }
+
+		h2 {
+			font-weight: 400;
+
+			&.section-head { font-size: 2.5em; }
+		}
 
 		.container {
 			margin: 0 auto;

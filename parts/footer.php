@@ -1,6 +1,6 @@
 	<footer>
-		<div class="container">
-			<a href="#header" class="logo smooth">
+		<div class="container reveal">
+			<a href="/" class="logo">
 				<span class="offscreen"><?php bloginfo( 'name' ); ?></span>
 				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 113 71" style="enable-background:new 0 0 113 71;" xml:space="preserve">
@@ -41,7 +41,11 @@
 
     <?php } else { ?>
         <!-- Otherwise, provide the compiled and uglified JS file. -->
-        <script src="<?php echo get_template_directory_uri(); ?>/dist/js/footer-scripts.min.js"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/_ui/dist/footer-scripts.min.js"></script>
     <?php } ?>
+
+	<!--[if IE]>
+	  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/_ui/css/IE.css" />
+	<![endif]-->
     </body>
 </html>

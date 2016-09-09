@@ -14,13 +14,17 @@ a {
     }
 }
 
+a[href^=tel] {
+    color: $white;
+}
+
 .arrow-link {
 	a {
 		background-image: url('/wp-content/themes/holmes/_ui/img/global/arrow-right.svg');
 		background-position: right $space-half center;
 		background-repeat: no-repeat;
-		background-size: 16px;
-		font-weight: bold;
+		background-size: 16px 16px;
+		font-weight: 400;
 		padding-right: $space-double;
 		transition: background-position 250ms linear;
 	}
@@ -28,6 +32,6 @@ a {
 	&:hover a,
 	&:focus a {
 		background-position: right 0 center;
-		color: $gray; 
+		color: $gray;
 	}
 }

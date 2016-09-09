@@ -32,6 +32,18 @@ window.HO = {
 
         $(window).triggerHandler('resize');
 
+		window.sr = ScrollReveal({
+			// distance: '30px',
+			duration: 750,
+			scale: 1,
+			mobile: false,
+			reset: false,
+		});
+
+		if (!self.nav.isMobile && $('.reveal').length) {
+			sr.reveal('.reveal');
+		}
+
         $('.smooth').click(function() {
             if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
                 var target = $(this.hash);
