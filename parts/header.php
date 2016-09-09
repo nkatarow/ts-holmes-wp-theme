@@ -75,7 +75,7 @@
 	</head>
     <body <?php body_class(); ?>>
         <header id="header">
-            <a href="/" class="logo reveal">
+            <a href="/" class="logo">
 				<span class="offscreen"><?php bloginfo( 'name' ); ?></span>
 				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 113 71" xml:space="preserve">
@@ -96,43 +96,43 @@
 			<nav id="primary" class="nav">
 				<ul>
 					<li>
-						<a href="#about-us" class="smooth reveal">
+						<a href="#about-us" class="smooth">
 							About
 							<span class="inline">Us</span>
 						</a>
 					</li>
 					<li>
-						<a href="#holmes-consulting" class="smooth reveal">
+						<a href="#holmes-consulting" class="smooth">
 							Holmes
 							<span class="inline">Consulting</span>
 						</a>
 					</li>
 					<li>
-						<a href="#holmes-structures" class="smooth reveal">
+						<a href="#holmes-structures" class="smooth">
 							Holmes
 							<span class="inline">Structures</span>
 						</a>
 					</li>
 					<li>
-						<a href="#holmes-fire" class="smooth reveal">
+						<a href="#holmes-fire" class="smooth">
 							Holmes
 							<span class="inline">Fire</span>
 						</a>
 					</li>
 					<li>
-						<a href="#holmes-solutions" class="smooth reveal">
+						<a href="#holmes-solutions" class="smooth">
 							Holmes
 							<span class="inline">Solutions</span>
 						</a>
 					</li>
 					<li>
-						<a href="#holmes-farsight" class="smooth reveal">
+						<a href="#holmes-farsight" class="smooth">
 							Holmes
 							<span class="inline">Farsight</span>
 						</a>
 					</li>
 					<li>
-						<a href="#contact-us" class="smooth reveal">
+						<a href="#contact-us" class="smooth">
 							Contact
 							<span class="inline">Us</span>
 						</a>

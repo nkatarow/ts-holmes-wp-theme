@@ -12,7 +12,8 @@ header {
 	width: 100%;
 	z-index: 10;
 	transition: height 250ms linear;
-	
+	transform: translateZ(0);
+
 	&.active { height: 100%; }
 
 	.logo {
@@ -93,6 +94,8 @@ header {
 		li {
 			float: left;
 			width: 14.285%;
+
+			&.active a { color: $orange; }
 
 			a {
 				.inline { display: block; }

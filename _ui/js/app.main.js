@@ -57,6 +57,32 @@ window.HO = {
                 }
             }
         });
+
+		if (!self.nav.isMobile) {
+
+
+	        $(window).on('scroll', function () {
+				clearTimeout( $.data( this, "scrollCheck" ) );
+
+				$.data( this, "scrollCheck", setTimeout(function() {
+		        	var currentPosition = $(this).scrollTop(),
+						fromBottom = $(document).height() - $(window).height() - $(window).scrollTop();
+		        		navHeight = $('#primary').outerHeight();
+
+		        	$('section').each(function(){
+		        		$(this).waypoint(function(){
+		        			$('#primary').find('a').parent('li').removeClass('active');
+		        			$('#primary').find('a[href="#' + $(this).attr('id')+'"]').parent('li').addClass('active');
+		        		}, { offset: navHeight });
+		        	});
+
+					if (fromBottom <= $('footer').outerHeight()) {
+	        			$('#primary').find('a').parent('li').removeClass('active');
+	        			$('#primary').find('a[href="#contact-us"]').parent('li').addClass('active');
+					}
+				}, 250) );
+	        });
+		}
     },
     events: {
         windowResize: function (event) {
