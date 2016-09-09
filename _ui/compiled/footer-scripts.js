@@ -51,7 +51,7 @@ window.HO = {
 
                 if (target.length) {
                     $('html,body').animate({
-                        scrollTop: target.offset().top
+                        scrollTop: target.offset().top - 95
                     }, 1000);
                     return false;
                 }
